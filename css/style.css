@@ -47,3 +47,13 @@
     }
     
 }
+
+
+
+/* wystarczy uzyc tego powyzej 
+@media all and (maxx-width: 480px) {
+    
+    .col {
+        width: 100%;
+    }
+}*/
