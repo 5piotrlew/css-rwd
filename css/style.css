@@ -38,3 +38,12 @@
     }
     
 }
+
+
+@media (max-width: 480px){
+    
+    .col {
+        width: 100%;
+    }
+    
+}
