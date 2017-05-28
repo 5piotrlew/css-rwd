@@ -50,10 +50,19 @@
 
 
 
-/* wystarczy uzyc tego powyzej 
+
 @media all and (maxx-width: 480px) {
     
     .col {
         width: 100%;
     }
-}*/
+}
+
+/* ustawienie przy drukowaniu dokumentu, 2 kolumny sa przy sobie, albo 4 przy sobie w jednej lini */
+/* w tym przypadku 4 bo kazda ma po 25 procent dla siebie */
+@media print {
+    .col {
+        border: 3px solid red;
+        width: 25%;
+    }
+}
