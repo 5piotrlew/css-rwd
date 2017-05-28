@@ -1,25 +1,19 @@
-@media (max-width: 992px){
-    
-    .col {
-        width: 50%;
-    }
-    
+#gallery {
+    width: 100%;
 }
 
+figure {
+    width: 32%;
+}
 
+@media (max-width: 992px) {
+    figure{
+        width: 49%;
+    } 
+}
+        
 @media (max-width: 480px){
-    
-    .col {
+    figure{
         width: 100%;
     }
-    
 }
-
-
-
-
-@media all and (maxx-width: 480px) {
-    
-    .col {
-        width: 100%;
-    }
