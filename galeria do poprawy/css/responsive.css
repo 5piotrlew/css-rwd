@@ -1,19 +1,24 @@
+/*caly kontener galeria staje sie reponsywna*/
+
 #gallery {
     width: 100%;
 }
 
+/* jeden obrazek wypelnia 32 procent calosci czyli wiadc 3 obrazki*/
 figure {
     width: 32%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) { /* jak bedzie mniejsza niz maksymalne 992 to sie stanie kod */
     figure{
+/*        jeden obrazek zajmuje ok polowy okna przegladarki czyloi widac 2 obrazki*/
         width: 49%;
     } 
 }
         
-@media (max-width: 480px){
+@media (max-width: 480px){ /* jak bedzie mniejsza niz maks 480 to sie stanie kod ponizej */
     figure{
+/*        jeden obrazek ma calosc malego okna czyli widac jeden obrazek*/
         width: 100%;
     }
 }
