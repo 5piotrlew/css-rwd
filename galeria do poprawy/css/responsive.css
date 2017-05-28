@@ -1,24 +1,30 @@
 /*caly kontener galeria staje sie reponsywna*/
 
 #gallery {
-    width: 100%;
+    width: 90%;
 }
 
 /* jeden obrazek wypelnia 32 procent calosci czyli wiadc 3 obrazki*/
 figure {
-    width: 32%;
+    width: 32%; /* mozna ustawic 33 plus float:left; */
 }
-
+/* do rozdzielczosci maksymalnie 992 stosuj te reguly ktore bede wpisywal */
 @media (max-width: 992px) { /* jak bedzie mniejsza niz maksymalne 992 to sie stanie kod */
     figure{
 /*        jeden obrazek zajmuje ok polowy okna przegladarki czyloi widac 2 obrazki*/
-        width: 49%;
+        width: 49%; /* lub 50 procent z float:left; */
     } 
 }
         
-@media (max-width: 480px){ /* jak bedzie mniejsza niz maks 480 to sie stanie kod ponizej */
+@media (max-width: 768px){ /* jak bedzie mniejsza niz maks 768 to sie stanie kod ponizej */
     figure{
 /*        jeden obrazek ma calosc malego okna czyli widac jeden obrazek*/
         width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    #gallery{
+        width: 100%;   /* wtedy tak jakby znikają boczne marginesy bo zmienia sie cala galeria */
     }
 }
